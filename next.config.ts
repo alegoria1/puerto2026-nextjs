@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true, // <--- OBLIGATOIRE POUR LES IMAGES SANS SERVEUR NODE
   },
   //basePath: '/',
-  //trailingSlash: true, // Aide souvent pour les liens
+  trailingSlash: true, // Aide souvent pour les liens
 };
 
 export default nextConfig;

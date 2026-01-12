@@ -18,7 +18,16 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       <AnimatedBackground/>
       {/* --- 1. TOPBAR MOBILE (Version Crystal) --- */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-16 z-50 flex items-center justify-between px-4 border-b border-white/20 bg-gradient-to-r from-white/10 to-black/20 backdrop-blur-xl">
-         <span className="text-puerto-yellow font-serif font-bold text-xl tracking-widest drop-shadow-md">PUERTO</span>
+         <Link href="/" className="relative w-100 h-24 flex items-center justify-center group m-0 p-0">
+          <div className="relative w-32 h-32 p-0 m-0 opacity-70 flex items-center justify-center hover:scale-110 transition-transform duration-500">
+            <Image 
+              src="/images/logo.png" 
+              alt="Puerto Habana Toulouse" 
+              fill 
+              className="object-contain" // object-contain pour qu'il ne soit pas coupé
+            />
+          </div>
+        </Link>
          <button onClick={() => setIsMenuOpen(true)} className="p-2 border border-white/20 rounded-md bg-white/10 backdrop-blur-md shadow-[inset_0_0_10px_rgba(255,255,255,0.1)]">
             <Menu className="text-white w-6 h-6" />
          </button>
