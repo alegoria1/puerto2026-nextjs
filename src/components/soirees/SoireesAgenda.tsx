@@ -8,12 +8,12 @@ const events = [
   {
     id: "salsa",
     days: "Mardi & Mercredi",
-    title: "Salsa & Bachata",
-    subtitle: "Apprendre & Pratiquer",
+    title: "Les soirées Salsa",
+    subtitle: "Apprendre, Pratiquer & S'Amuser",
     desc: "Le début de semaine se fait en rythme ! Nos DJ guests vous font voyager au son des meilleures musiques Salsa, Son, Bachata et Kompa. Que vous soyez débutant curieux ou danseur confirmé, la piste est à vous.",
-    details: ["DJ Guests en rotation", "Ambiance conviviale", "Fermeture 02h00"],
+    details: ["DJ Guests en rotation tout le mois", "Ambiance conviviale", "DJ de 21h 02h", "Restauration jusqu'à 22h","Cours de Salsa les mardis", "Cours de Bachata les mercredis"],
     icon: Music2,
-    image: "/images/salsa-dancing.jpg", // Mets une photo de couple qui danse
+    image: "/images/soirees-salsa.jpg", // Mets une photo de couple qui danse
     color: "text-blue-400",
     borderColor: "border-blue-400/30"
   },
@@ -25,7 +25,7 @@ const events = [
     desc: "Le mélange explosif qui séduit tout Toulouse. Commencez par notre Happy Hour tardif (jusqu'à 23h) et laissez-vous emporter par un mix Salsa, Reggaeton et Hits actuels.",
     details: ["Happy Hour jusqu'à 23h", "Mix Latino Généraliste", "Fermeture 03h00"],
     icon: Star,
-    image: "/images/happy-hour-bg.jpg", // Mets une photo de fête/cocktails
+    image: "/images/soirees-Eclectico-latino.jpg", // Mets une photo de fête/cocktails
     color: "text-puerto-yellow",
     borderColor: "border-puerto-yellow/30"
   },
@@ -35,9 +35,9 @@ const events = [
     title: "Week-end Caliente",
     subtitle: "Clubbing & Fête Totale",
     desc: "Le Puerto prend toute sa dimension festive. DJs résidents et invités enflamment la piste jusqu'à l'aube. C'est la promesse d'une immersion totale dans l'esprit latino.",
-    details: ["Ambiance Survoltée", "Clubbing Latino & Reggaeton", "Fermeture 05h00"],
+    details: ["Ambiance Survoltée", "Clubbing Latino & Reggaeton", "Fermeture 04h00"],
     icon: Flame,
-    image: "/images/club-crowd.jpg", // Mets une photo de foule/club
+    image: "/images/soirees-week-end.jpg", // Mets une photo de foule/club
     color: "text-red-500",
     borderColor: "border-red-500/30"
   }

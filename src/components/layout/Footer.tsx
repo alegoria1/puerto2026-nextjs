@@ -97,7 +97,7 @@ export default function Footer() {
             </ul>
             <div className="pt-2 flex items-center gap-2 text-xs text-puerto-yellow">
                <Clock size={14} />
-               <span>Mardi & Mercredi, Cuisine ouverte jusqu'à 22h<br/>Jeudi à Samedi, Cuisine ouverte jusqu'à 23h</span>
+               <span>Mardi & Mercredi, Cuisine ouverte jusqu'à 22h<br/>Jeudi à Samedi, Cuisine ouverte jusqu'à 2230</span>
             </div>
           </div>
 
@@ -107,9 +107,9 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><FooterLink href="/restaurant">La Carte Restaurant</FooterLink></li>
               <li><FooterLink href="/bar">Le bar</FooterLink></li>
-              <li><FooterLink href="/soirees">Les Soirées Latino</FooterLink></li>
-              <li><FooterLink href="/cours">Cours de Danse</FooterLink></li>
-              <li><FooterLink href="/recrutement">Recrutement</FooterLink></li>
+              <li><FooterLink href="/soirees-latino">Les Soirées Latino</FooterLink></li>
+              <li><FooterLink href="/cours-danse">Cours de Danse</FooterLink></li>
+              {/* <li><FooterLink href="/recrutement">Recrutement</FooterLink></li> */}
             </ul>
             
             <Link href="/contact" className="inline-block w-full mt-4">
@@ -128,7 +128,7 @@ export default function Footer() {
           <div className="flex gap-6">
              <Link href="/mentions-legales" className="hover:text-gray-400 transition-colors">Mentions Légales</Link>
              <Link href="/cookies" className="hover:text-gray-400 transition-colors">Politique de Confidentialité</Link>
-             <a href="https://srv10.fr" target="_blank" className="hover:text-puerto-yellow transition-colors opacity-50 hover:opacity-100">
+             <a href="https://conseil-chr.fr" target="_blank" className="hover:text-puerto-yellow transition-colors opacity-50 hover:opacity-100">
                 Design & Dev: Agence Conseil CHR Toulouse
              </a>
           </div>

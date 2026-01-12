@@ -19,7 +19,7 @@ export default function SoireesPage() {
       {/* 1. HERO SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image 
-            src="/images/club-bg.jpg" // IMAGE FOND CLUBBING
+            src="/images/soirees-bg.jpg" // IMAGE FOND CLUBBING
             alt="Ambiance Soirée Puerto Habana"
             fill
             className="object-cover opacity-60"
@@ -27,15 +27,11 @@ export default function SoireesPage() {
         />
         <div className="relative z-10 text-center px-4 max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 drop-shadow-lg">
-                Nuits <span className="text-puerto-yellow">Latines</span>
+                Les soirées <span className="text-puerto-yellow">Latinos</span> <br/>à Toulouse
             </h1>
             <p className="text-white/90 text-lg md:text-xl tracking-widest uppercase font-bold mb-8">
                 Musique • Danse • Convivialité
             </p>
-            {/* Scroll vers l'agenda */}
-            <div className="animate-bounce mt-8">
-               <span className="text-white/50 text-sm uppercase tracking-widest">Découvrir le programme</span>
-            </div>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
       </section>
@@ -53,8 +49,10 @@ export default function SoireesPage() {
              Entre cocktails exotiques, piste de danse enflammée et programmation variée, chaque semaine réserve son lot d’émotions.
          </p>
          <p className="text-gray-400">
-             Que vous soyez amateur de salsa, passionné de reggaeton ou simplement en quête d’une soirée festive, 
-             notre maison vous ouvre ses portes pour vivre des moments inoubliables.
+             Que vous soyez amateur de Salsa ou de Kizomba, de Kompa, passionné de reggaeton ou simplement en quête d’une soirée festive, notre maison vous ouvre ses portes pour vivre des moments inoubliables.
+         </p>
+         <p className="text-puerto-yellow">
+             Pas besoin d'être un bon danseur pour venir au Puerto. Découvrez par vous même.
          </p>
       </section>
 

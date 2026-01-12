@@ -41,7 +41,7 @@ export default function RestaurantPage() {
             <p>
             Notre carte met à l’honneur une cuisine gourmande et conviviale, élaborée à partir de produits de qualité, pensée pour rassembler amis, collègues ou familles autour de plats simples, savoureux et faits maison.</p>
             <div className="mt-12">
-                <BtnShine href="#reservation">
+                <BtnShine href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank">
                 Réserver une Table
             </BtnShine>
             </div>
@@ -117,10 +117,10 @@ export default function RestaurantPage() {
             <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <a href="tel:0551455461" className="bg-black text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
                     <Clock size={18} />
-                    05 51 45 54 61
+                    Infos : 05 51 45 54 61
                 </a>
-                <BtnArrow href="/contact" className="bg-white/20 text-black border border-black/10 hover:bg-black hover:text-white px-8 py-4 justify-center">
-                    Demande de Groupe
+                <BtnArrow href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank" className="bg-white/20 text-black border border-black/10 hover:bg-black hover:text-white px-8 py-4 justify-center">
+                    Réserver une table
                 </BtnArrow>
             </div>
         </div>

@@ -2,8 +2,12 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google"; // Import des polices
 import "./globals.css";
-import Shell from "@/components/layout/Shell"; // On va le créer juste après
+import Shell from "@/components/layout/Shell"; // MENU & TOPBAR
 import Footer from "@/components/layout/Footer";
+
+import { CookieConsent } from "@/components/ui/CookieConsent";
+
+import { FloatingActions } from "@/components/ui/FloatingActions";
 
 
 // Configuration des polices
@@ -36,6 +40,11 @@ export default function RootLayout({
           {children}
         </Shell>
         <Footer/>
+        {/* COOKIE CONSENT */}
+        <CookieConsent />
+
+        {/* Boutons Flottants */}
+        <FloatingActions />
       </body>
     </html>
   );

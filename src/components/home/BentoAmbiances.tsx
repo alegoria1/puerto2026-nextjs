@@ -31,7 +31,7 @@ export function BentoAmbiances() {
       subtitle: "Fiesta Latina",
       desc: "Cours de salsa, bachata et soirées DJ jusqu'au bout de la nuit.",
       img: "/images/club.jpg", // Mets une vraie image ici
-      link: "/soirees",
+      link: "/soirees-latino",
       colSpan: "md:col-span-3" // Prend toute la largeur
     }
   ];

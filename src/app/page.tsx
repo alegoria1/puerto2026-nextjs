@@ -7,11 +7,9 @@ import { ArrowRight, Music, Utensils, Wine, CalendarHeart } from "lucide-react";
 import Herosection from "@/components/home/Hero";
 import { BtnShine, BtnSlide, BtnGlow, BtnArrow, BtnGlass } from "@/components/ui/Buttons";
 
-import { BentoAmbiances } from "@/components/home/BentoAmbiances";
-
-import { AmbiancesTable } from "@/components/home/AmbiancesTable";
-
 import { AmbiancesGrid } from "@/components/home/AmbiancesGrid";
+
+import { BentoMenuCours } from "@/components/BentoMenu";
 
 
 // --- DONNÉES ---
@@ -47,7 +45,7 @@ const ctaBlocks = [
     subtitle: "Apprendre & Progresser, Salsa & Bachata",
     icon: <CalendarHeart />,
     image: "/images/cours-cta.png",
-    link: "/cours",
+    link: "/cours-danse",
     color: "from-puerto-yellow/20"
   },
 ];
@@ -124,7 +122,7 @@ export default function HomePage() {
             Situé en plein cœur de <strong>Toulouse</strong>, au Port Saint-Étienne, le Puerto Habana est la référence des <strong>soirées latino</strong> depuis plus de 15 ans. Notre établissement réunit sur deux étages un <strong>restaurant de tapas</strong> aux saveurs du monde, un bar à cocktails spécialisé dans le rhum, et une piste de danse où se mêlent salsa, bachata et reggaeton. Que vous veniez pour un <strong>cours de danse</strong> débutant ou pour enflammer le dancefloor tout le week-end, l'esprit de Cuba vous attend.
           </p>
           <div className="pt-4">
-              <Link href="/contact" className="inline-flex items-center gap-2 text-puerto-yellow hover:text-white transition-colors uppercase tracking-widest font-bold text-sm border-b border-puerto-yellow pb-2">
+              <Link href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank" className="inline-flex items-center gap-2 text-puerto-yellow hover:text-white transition-colors uppercase tracking-widest font-bold text-sm border-b border-puerto-yellow pb-2">
                   Réserver votre table <ArrowRight size={16} />
               </Link>
           </div>
@@ -165,7 +163,7 @@ export default function HomePage() {
          </div>
       </section>
 
-      
+      <BentoMenuCours/>
 
     </div>
   );

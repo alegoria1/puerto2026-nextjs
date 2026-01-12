@@ -156,7 +156,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                     {name: "Le Bar", href: "/bar"},
                     {name: "Le Restaurant", href: "/restaurant"},
                     {name: "Soirées & Club", href: "/soirees-latino"},
-                    {name: "Cours de Danse", href: "/cours"},
+                    {name: "Cours de Danse", href: "cours-danse"},
                     {name: "Contact", href: "/contact"}
                 ].map((item, i) => (
                     <motion.div

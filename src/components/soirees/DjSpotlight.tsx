@@ -20,7 +20,7 @@ export function DjSpotlight() {
                 <div className="absolute inset-0 rounded-full border-4 border-puerto-yellow/30 animate-pulse-slow"></div>
                 <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-black shadow-2xl">
                     <Image 
-                        src="/images/dj-charif.jpg" // IMAGE DJ CHARIF
+                        src="/images/charif.jpg" // IMAGE DJ CHARIF
                         alt="DJ Charif Puerto Habana"
                         fill
                         className="object-cover hover:scale-110 transition-transform duration-700"
