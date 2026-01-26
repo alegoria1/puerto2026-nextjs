@@ -1,7 +1,7 @@
 // src/components/layout/Footer.tsx
 import React from "react";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Instagram, Facebook, Clock, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook, Clock, Car, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -53,7 +53,7 @@ export default function Footer() {
               </li>
               <li>
                 <div className="flex items-start gap-3">
-                  <MapPin className="mt-1 min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18}/>
+                  <Car className="mt-1 min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18}/>
                   <span className="text-sm italic text-gray-500">Parking : Carnot - Saint-Etienne - Place Occitane<br/>
                   Allées Paul Sabatier, avenue Jean Rieux, rue Ambroise Frédeau,...
                   </span>
