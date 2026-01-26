@@ -37,7 +37,7 @@ const ctaBlocks = [
     subtitle: "De la Salsa à l'ambiance latino-généraliste",
     icon: <Music />,
     image: "/images/danse-cta.png",
-    link: "/soirees",
+    link: "/soirees-latino",
     color: "from-purple-500/20"
   },
   {
@@ -52,12 +52,15 @@ const ctaBlocks = [
 
 // Images de la galerie (Style Vercel : propre et net)
 const galleryImages = [
-  "/images/galleryHome/soiree-puerto-29-1024x683.jpg",
-  "/images/galleryHome/soiree-puerto-42-1024x683.jpg",
-  "/images/galleryHome/food-060-768x512.jpg",
-  "/images/galleryHome/soiree-puerto-70-1024x683.jpg",
-  "/images/galleryHome/food-073-1024x683.jpg",
-  "/images/galleryHome/halloween.jpg",
+  "/images/galleryHome/01.jpg",
+  "/images/galleryHome/02.jpg",
+  "/images/galleryHome/03.jpg",
+  "/images/galleryHome/04.jpg",
+  "/images/galleryHome/05.jpg",
+  "/images/galleryHome/06.jpg",
+  "/images/galleryHome/07.jpg",
+  "/images/galleryHome/08.jpg",
+  "/images/galleryHome/09.jpg",
 ];
 
 // --- PAGE COMPOSANT ---
@@ -119,7 +122,7 @@ export default function HomePage() {
           </h2>
           {/* Texte optimisé pour le SEO local à Toulouse */}
           <p className="text-gray-300 leading-relaxed text-lg">
-            Situé en plein cœur de <strong>Toulouse</strong>, au Port Saint-Étienne, le Puerto Habana est la référence des <strong>soirées latino</strong> depuis plus de 15 ans. Notre établissement réunit sur deux étages un <strong>restaurant de tapas</strong> aux saveurs du monde, un bar à cocktails spécialisé dans le rhum, et une piste de danse où se mêlent salsa, bachata et reggaeton. Que vous veniez pour un <strong>cours de danse</strong> débutant ou pour enflammer le dancefloor tout le week-end, l'esprit de Cuba vous attend.
+            Situé en plein cœur de <strong>Toulouse</strong>, au Port Saint-Étienne, le Puerto Habana est la référence des <strong>soirées latino</strong> depuis plus de 15 ans. Notre établissement réunit sur deux étages un <strong>restaurant, menu et tapas</strong> aux saveurs du monde, un bar à cocktails spécialisé dans le rhum, et une piste de danse où se mêlent salsa, bachata et reggaeton. Que vous veniez pour un <strong>cours de danse</strong> débutant ou pour enflammer le dancefloor tout le week-end, l'esprit de Cuba vous attend.
           </p>
           <div className="pt-4">
               <Link href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank" className="inline-flex items-center gap-2 text-puerto-yellow hover:text-white transition-colors uppercase tracking-widest font-bold text-sm border-b border-puerto-yellow pb-2">

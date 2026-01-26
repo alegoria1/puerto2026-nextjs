@@ -62,18 +62,7 @@ export default function SoireesPage() {
       {/* 4. DJ SPOTLIGHT */}
       <DjSpotlight />
 
-      {/* 5. CTA FINAL */}
-      <section className="py-20 text-center">
-          <h2 className="text-3xl font-serif font-bold text-white mb-8">
-              Prêt à enflammer la piste ?
-          </h2>
-          <div className="flex justify-center gap-4">
-              <BtnShine href="/restaurant#reservation">
-                  Réserver une Table
-              </BtnShine>
-          </div>
-      </section>
-
+      
       <BentoMenuSoirees/>
 
 

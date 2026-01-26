@@ -29,7 +29,7 @@ export default function Footer() {
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               L'ambiance authentique de Cuba au cœur de Toulouse. 
-              Restaurant de tapas, bar à cocktails et club latino depuis 2010.
+              Restaurant, menus et tapas à partager, bar à cocktails et club latino depuis 1997.
             </p>
             <div className="flex gap-4 pt-2">
               <SocialLink href="https://instagram.com/puertotoulouse" icon={<Instagram size={20} />} label="Instagram" />
@@ -52,15 +52,23 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:0551455461" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
+                <div className="flex items-start gap-3">
+                  <MapPin className="mt-1 min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18}/>
+                  <span className="text-sm italic text-gray-500">Parking : Carnot - Saint-Etienne - Place Occitane<br/>
+                  Allées Paul Sabatier, avenue Jean Rieux, rue Ambroise Frédeau,...
+                  </span>
+                </div>
+              </li>
+              <li>
+                <a href="tel:+33561455461" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
                   <Phone className="min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18} />
-                  <span className="text-sm">05 51 45 54 61</span>
+                  <span className="text-sm">05 61 45 54 61</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@puertohabana.fr" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
+                <a href="mailto:puerto@puerto-habana.com" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
                   <Mail className="min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18} />
-                  <span className="text-sm">contact@puertohabana.fr</span>
+                  <span className="text-sm">puerto@puerto-habana.com</span>
                 </a>
               </li>
             </ul>
@@ -72,7 +80,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex justify-between items-center border-b border-white/5 pb-2">
                 <span>Mardi </span>
-                <span className="text-white font-medium">19h - 02h00</span>
+                <span className="text-white font-medium">19h00 - 02h00</span>
               </li>
               <li className="flex justify-between items-center border-b border-white/5 pb-2">
                 <span>Mercredi</span>
@@ -88,16 +96,18 @@ export default function Footer() {
               </li>
               <li className="flex justify-between items-center border-b border-white/5 pb-2">
                 <span>Samedi</span>
-                <span className="text-white font-medium">20h - 04h00</span>
+                <span className="text-white font-medium">20h00 - 04h00</span>
               </li>
-              <li className="flex justify-between items-center pt-1 text-gray-500 italic">
-                <span>Dimanche & Lundi</span>
-                <span>Fermé / Ouverture exceptionnelle</span>
+              <li className="border-b border-white/5 pb-2">
+                <span>Dimanche & Lundi : Fermé</span>
+                <span className="text-white text-sm text-gray-500 italic"><br/>Sauf veille de fêtes</span>
               </li>
+
             </ul>
+            
             <div className="pt-2 flex items-center gap-2 text-xs text-puerto-yellow">
                <Clock size={14} />
-               <span>Mardi & Mercredi, Cuisine ouverte jusqu'à 22h<br/>Jeudi à Samedi, Cuisine ouverte jusqu'à 2230</span>
+               <span>Mardi & Mercredi, Cuisine ouverte jusqu'à 22h<br/>Jeudi à Samedi, Cuisine ouverte jusqu'à 22h30</span>
             </div>
           </div>
 

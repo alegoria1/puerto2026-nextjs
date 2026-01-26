@@ -53,19 +53,19 @@ export function HappyHour() {
                 <div className="p-5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md hover:border-puerto-yellow/60 hover:bg-white/20 transition-all duration-300 group">
                     <Clock className="w-8 h-8 text-puerto-yellow mx-auto mb-3 group-hover:scale-110 transition-transform" />
                     <h3 className="font-bold text-white uppercase tracking-wider text-sm mb-1">Horaire</h3>
-                    <p className="text-gray-300 text-sm font-medium">Tous les Jeudis<br/>jusqu'à 23h00</p>
+                    <p className="text-gray-300 text-sm font-medium">Tous les Jeudis<br/> de l'ouverture jusqu'à 22h30</p>
                 </div>
                 {/* Carte 2 */}
                 <div className="p-5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md hover:border-puerto-yellow/60 hover:bg-white/20 transition-all duration-300 group">
                     <Martini className="w-8 h-8 text-puerto-yellow mx-auto mb-3 group-hover:scale-110 transition-transform" />
                     <h3 className="font-bold text-white uppercase tracking-wider text-sm mb-1">Offre</h3>
-                    <p className="text-gray-300 text-sm font-medium">Cocktails & Toasts<br/>à petits prix</p>
+                    <p className="text-gray-300 text-sm font-medium">Cocktails à petits prix <br/>& Toasts offerts</p>
                 </div>
                 {/* Carte 3 */}
                 <div className="p-5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md hover:border-puerto-yellow/60 hover:bg-white/20 transition-all duration-300 group">
                     <PartyPopper className="w-8 h-8 text-puerto-yellow mx-auto mb-3 group-hover:scale-110 transition-transform" />
                     <h3 className="font-bold text-white uppercase tracking-wider text-sm mb-1">Ambiance</h3>
-                    <p className="text-gray-300 text-sm font-medium">Soirée<br/>Eclectico Latino</p>
+                    <p className="text-gray-300 text-sm font-medium">Soirée ECLECTICO LATINO<br/>de la salsa au latino-généraliste</p>
                 </div>
             </div>
 

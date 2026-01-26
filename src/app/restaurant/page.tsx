@@ -36,7 +36,7 @@ export default function RestaurantPage() {
                 Restaurant brasserie & <span className="text-puerto-yellow">Tapas</span> à Toulouse
             </h1>
             <p className="text-white/90 text-lg md:text-xl tracking-widest uppercase font-bold mb-8">
-                • Tapas • Brochettes • Salades • Plats maison •
+                • Tapas • Brochettes • Salades • Plats maison • Menu de Groupe • 
             </p>
             <p>
             Notre carte met à l’honneur une cuisine gourmande et conviviale, élaborée à partir de produits de qualité, pensée pour rassembler amis, collègues ou familles autour de plats simples, savoureux et faits maison.</p>
@@ -115,9 +115,9 @@ export default function RestaurantPage() {
                 <b>Réservation fortement conseillée le week-end.</b>
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="tel:0551455461" className="bg-black text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
+                <a href="tel:+33561455461" className="bg-black text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
                     <Clock size={18} />
-                    Infos : 05 51 45 54 61
+                    Infos : 05 61 45 54 61
                 </a>
                 <BtnArrow href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank" className="bg-white/20 text-black border border-black/10 hover:bg-black hover:text-white px-8 py-4 justify-center">
                     Réserver une table

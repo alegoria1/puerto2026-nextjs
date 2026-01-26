@@ -78,7 +78,7 @@ export function MenusBento() {
                         <span><strong>Assiette Brochettes</strong> (4 pièces)</span>
                     </li>
                      <li className="text-xs text-gray-400 pl-8 -mt-2 mb-2">
-                       Magret, Gambas, Boeuf, Poulet + Frites & Salade
+                       Magret, Gambas, Boeuf, Poulet + Frites maison & Salade
                     </li>
                     <li className="flex items-start gap-3 text-white text-sm">
                         <CheckCircle2 size={18} className="text-puerto-yellow mt-1 shrink-0" />

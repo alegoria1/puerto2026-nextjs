@@ -40,7 +40,7 @@ export default function MentionsLegalesPage() {
                 <li><strong className="text-white">RCS :</strong> Toulouse</li>
                 <li><strong className="text-white">Activité (NAF) :</strong> Débits de boissons (56.30Z)</li>
                 <li className="pt-2 mt-2 border-t border-white/10">
-                    <strong className="text-white">Contact :</strong> <a href="mailto:contact@puertohabana.fr" className="hover:text-puerto-yellow transition-colors">contact@puertohabana.fr</a> | 05 51 45 54 61
+                    <strong className="text-white">Contact :</strong> <a href="mailto:puerto@puerto-habana.com" className="hover:text-puerto-yellow transition-colors">puerto@puerto-habana.com</a> | 05 61 45 54 61
                 </li>
             </ul>
         </div>
@@ -127,7 +127,7 @@ export default function MentionsLegalesPage() {
             <h3 className="text-lg font-bold text-white mt-4">5.3 Vos droits</h3>
             <p className="leading-relaxed text-sm">
                 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant.
-                Pour exercer ce droit, vous pouvez nous contacter par courrier à l'adresse du siège social ou par email à : <em>contact@puertohabana.fr</em>.
+                Pour exercer ce droit, vous pouvez nous contacter par courrier à l'adresse du siège social ou par email à : <em>puerto@puerto-habana.com</em>.
             </p>
         </div>
 

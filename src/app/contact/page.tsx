@@ -45,8 +45,8 @@ export default function ContactPage() {
                         <Phone size={32} />
                     </div>
                     <h3 className="text-white font-bold uppercase tracking-widest mb-2">Informations Générales</h3>
-                    <a href="tel:0551455461" className="block text-3xl md:text-4xl font-serif font-bold text-white hover:text-puerto-yellow transition-colors">
-                        05 51 45 54 61
+                    <a href="tel:+33561455461" className="block text-3xl md:text-4xl font-serif font-bold text-white hover:text-puerto-yellow transition-colors">
+                        05 61 45 54 61
                     </a>
                     <p className="text-gray-400 text-sm mt-2">Du mardi au samedi, dès 10h</p>
                 </div>
@@ -104,7 +104,8 @@ export default function ContactPage() {
                                 <Car size={18} className="text-puerto-yellow mt-1" />
                                 <div>
                                     <p className="text-white text-sm font-bold">Parking</p>
-                                    <p className="text-xs text-gray-400">Place Occitane / Carnot</p>
+                                    <p className="text-xs text-gray-400">Carnot - Saint-Etienne - Place Occitane<br/>
+                                    Allées Paul Sabatier, avenue Jean Rieux, rue Ambroise Frédeau,...</p>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +140,7 @@ export default function ContactPage() {
 
                 {/* 5. BLOC RÉSEAUX & MAIL */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <a href="mailto:contact@puertohabana.fr" className="bg-white/5 border border-white/10 p-6 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors">
+                    <a href="mailto:puerto@puerto-habana.com" className="bg-white/5 border border-white/10 p-6 rounded-xl flex items-center gap-4 hover:bg-white/10 transition-colors">
                         <Mail className="text-puerto-yellow" size={24} />
                         <div>
                             <p className="text-xs text-gray-400 uppercase tracking-widest">Email</p>
@@ -207,7 +208,7 @@ export default function ContactPage() {
                         </li>
                          <li className="flex justify-between items-center pt-2 opacity-60">
                             <span className="text-gray-400">Dimanche & Lundi</span>
-                            <span className="text-gray-400 italic">Fermé / Exceptionnel</span>
+                            <span className="text-gray-400 italic">Fermé / Sauf veille de jours fériés</span>
                         </li>
                     </ul>
 

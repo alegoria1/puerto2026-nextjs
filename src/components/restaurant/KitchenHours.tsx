@@ -29,7 +29,7 @@ export function KitchenHours() {
                    Horaires Cuisine
                 </h3>
                 <p className="text-gray-400 text-sm mt-1">
-                   Service du soir
+                   Service du soir uniquement
                 </p>
              </div>
           </div>
@@ -57,7 +57,7 @@ export function KitchenHours() {
                 </div>
                 <div className="flex items-baseline gap-2">
                    <span className="text-white text-xs">Jusqu'à</span>
-                   <span className="text-3xl font-bold text-white group-hover:text-puerto-cyan transition-colors">23h00</span>
+                   <span className="text-3xl font-bold text-white group-hover:text-puerto-cyan transition-colors">22h30</span>
                 </div>
              </div>
 

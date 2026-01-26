@@ -42,7 +42,7 @@ export default function PolitiqueConfidentialitePage() {
                 Le responsable du traitement des données collectées sur ce site est :<br/>
                 <strong>SAS B.C.B.G (Puerto Habana)</strong><br/>
                 12 Port Saint-Étienne, 31000 Toulouse<br/>
-                Email : <a href="mailto:contact@puertohabana.fr" className="text-puerto-yellow hover:underline">contact@puertohabana.fr</a>
+                Email : <a href="mailto:puerto@puerto-habana.com" className="text-puerto-yellow hover:underline">puerto@puerto-habana.com</a>
             </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li className="bg-white/5 p-3 rounded border border-white/10"><strong>Droit d'opposition :</strong> Refuser l'utilisation de cookies.</li>
             </ul>
             <p className="text-sm mt-4">
-                Pour exercer ces droits, contactez-nous simplement à : <strong>contact@puertohabana.fr</strong>.
+                Pour exercer ces droits, contactez-nous simplement à : <strong>puerto@puerto-habana.com</strong>.
             </p>
         </div>
 

@@ -37,7 +37,7 @@ const formulas = [
     features: [
       "Dégustation de Tapas (4 pièces)",
       "Assiette de Brochettes (4 pièces)",
-      "Accompagnement Frites & Salade",
+      "Accompagnement Frites maison & Salade",
       "Assiette de Desserts (3 mignardises)",
       "Magret, Gambas, Boeuf & Poulet"
     ]

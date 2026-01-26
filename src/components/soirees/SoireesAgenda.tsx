@@ -8,10 +8,10 @@ const events = [
   {
     id: "salsa",
     days: "Mardi & Mercredi",
-    title: "Les soirées Salsa",
+    title: "Les soirées Salsa & Bachata",
     subtitle: "Apprendre, Pratiquer & S'Amuser",
     desc: "Le début de semaine se fait en rythme ! Nos DJ guests vous font voyager au son des meilleures musiques Salsa, Son, Bachata et Kompa. Que vous soyez débutant curieux ou danseur confirmé, la piste est à vous.",
-    details: ["DJ Guests en rotation tout le mois", "Ambiance conviviale", "DJ de 21h 02h", "Restauration jusqu'à 22h","Cours de Salsa les mardis", "Cours de Bachata les mercredis"],
+    details: ["DJ Guests en rotation tout le mois", "Ambiance conviviale", "DJ de 21h45 à 02h", "Restauration jusqu'à 22h","Cours de Salsa les mardis", "Cours de Bachata les mercredis"],
     icon: Music2,
     image: "/images/soirees-salsa.jpg", // Mets une photo de couple qui danse
     color: "text-blue-400",
@@ -22,8 +22,8 @@ const events = [
     days: "Tous les Jeudis",
     title: "Eclectico Latino",
     subtitle: "L'Afterwork Incontournable",
-    desc: "Le mélange explosif qui séduit tout Toulouse. Commencez par notre Happy Hour tardif (jusqu'à 23h) et laissez-vous emporter par un mix Salsa, Reggaeton et Hits actuels.",
-    details: ["Happy Hour jusqu'à 23h", "Mix Latino Généraliste", "Fermeture 03h00"],
+    desc: "Le mélange explosif qui séduit tout Toulouse. Commencez par notre Happy Hour tardif (jusqu'à 22h30) et laissez-vous emporter par un mix Salsa, Reggaeton et Hits actuels.",
+    details: ["Happy Hour jusqu'à 22h30", "Mix Latino Généraliste", "Fermeture 03h00"],
     icon: Star,
     image: "/images/soirees-Eclectico-latino.jpg", // Mets une photo de fête/cocktails
     color: "text-puerto-yellow",

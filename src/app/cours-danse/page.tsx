@@ -196,7 +196,7 @@ export default function CoursDansePage() {
                      </div>
                      <div className="bg-black/30 p-4 rounded-lg border border-white/10">
                          <p className="text-white text-sm font-medium">
-                             🎉 <span className="text-puerto-yellow">Bonus :</span> La piste reste ouverte après les cours pour pratiquer jusqu'à 2h du matin !
+                             🎉 <span className="text-puerto-yellow">Bonus :</span> La piste reste ouverte pour tous après les cours pour pratiquer jusqu'à la fermeture !
                          </p>
                      </div>
                  </div>

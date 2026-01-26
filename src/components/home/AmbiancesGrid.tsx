@@ -17,7 +17,7 @@ export function AmbiancesGrid() {
       id: 2,
       day: "JEUDI SOIR",
       title: "Soirée Eclectico Latino",
-      desc: "La soirée hebdomadaire incontournable. De la Salsa au latino-généraliste, un vrai voyage musical et festif. Happy Hour jusqu'à 23h.",
+      desc: "La soirée hebdomadaire incontournable. De la Salsa au latino-généraliste, un vrai voyage musical et festif. Happy Hour jusqu'à 22h30.",
       icon: Disc,
       delay: 0.1,
     },

@@ -1,32 +1,26 @@
+/* 1. TOUJOURS EN PREMIER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* 2. ENSUITE TAILWIND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Tu peux laisser tes réglages de couleurs en dessous si tu veux */
+/* 3. ENSUITE TES VARIABLES ET RÉGLAGES */
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 1, 6, 15;
+  /* On définit les variables pour éviter que le site ne plante */
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 body {
+  font-family: var(--font-inter);
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  /* Lissage des polices pour l'élégance */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Scrollbar personnalisée (plus joli sur Chrome/Edge) */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #01060F;
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #EAC157; /* Devient jaune au survol */
-}
+/* ... Le reste de ton CSS (scrollbar, etc.) ... */

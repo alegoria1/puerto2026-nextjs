@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { BtnShine, BtnSlide, BtnGlow, BtnArrow, BtnGlass } from "@/components/ui/Buttons";
 import AnimatedBackground from "./AnimatedBackground";
+import { Portal } from "../ui/Portal";
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,7 +59,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         >
           {/* TEXTE */}
           <span 
-            className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70 
+            className="text-[14px] font-bold uppercase tracking-[0.3em] text-white/70 
                       transition-all duration-500 ease-out
                       group-hover:text-puerto-yellow group-hover:tracking-[0.5em] group-hover:drop-shadow-[0_0_8px_rgba(234,193,87,0.8)]"
             style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
@@ -110,14 +111,14 @@ export default function Shell({ children }: { children: React.ReactNode }) {
 
 
       {/* --- 3. TOPBAR INFO (Légère et transparente) --- */}
-      <header className="hidden md:flex fixed top-0 left-24 right-0 p-2 z-40 items-center justify-between px-12 
+      <header className="hidden md:flex fixed top-0 left-24 right-0 p-2 z-[9999] items-center justify-between px-12 
           border-b border-white/10 
           bg-gradient-to-r from-white/5 to-transparent 
           backdrop-blur-sm">
         
         <div className="flex items-center gap-3 text-sm tracking-[0.07em] text-gray-200 hover:text-white transition-colors cursor-pointer drop-shadow-sm">
           <Phone size={16} className="text-puerto-yellow" />
-          <span>05 51 45 54 61</span>
+          <span>05 61 45 54 61</span>
         </div>
         
         <div className="flex gap-6">
@@ -141,54 +142,56 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       {/* --- 4. OVERLAY MENU (Plus clair, on voit le fond derrière) --- */}
       <AnimatePresence>
       {isMenuOpen && (
-        <motion.div 
-            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            animate={{ opacity: 1, backdropFilter: "blur(15px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            transition={{ duration: 0.4 }}
-            // Ici on utilise bg-black/60 (au lieu de 90) pour voir le site en transparence
-            className="fixed inset-0 z-[100] bg-puerto-bg/60 flex flex-col items-center justify-center"
-        >
-            <button 
-                onClick={() => setIsMenuOpen(false)} 
-                className="absolute top-8 right-8 md:top-12 md:right-12 group flex items-center gap-3 text-white/70 hover:text-white transition-colors"
-            >
-                <span className="uppercase tracking-widest text-xs font-bold">Fermer</span>
-                <div className="p-2 rounded-full border border-white/20 group-hover:border-white transition-colors bg-white/5 backdrop-blur-sm">
-                    <X size={24} />
-                </div>
-            </button>
-            
-            <nav className="flex flex-col gap-8 text-center">
-                {[
-                    {name: "Accueil", href: "/"},
-                    {name: "Le Bar", href: "/bar"},
-                    {name: "Le Restaurant", href: "/restaurant"},
-                    {name: "Soirées & Club", href: "/soirees-latino"},
-                    {name: "Cours de Danse", href: "cours-danse"},
-                    {name: "Contact", href: "/contact"}
-                ].map((item, i) => (
-                    <motion.div
-                        key={item.name}
-                        initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.1 + (i * 0.1) }}
-                    >
-                        <Link 
-                            href={item.href}
-                            onClick={() => setIsMenuOpen(false)}
-                            className="text-4xl md:text-6xl font-serif font-bold text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-puerto-yellow hover:to-white transition-all duration-300 drop-shadow-lg"
-                        >
-                            {item.name}
-                        </Link>
-                    </motion.div>
-                ))}
-            </nav>
+        <Portal>
+          <motion.div 
+              initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              animate={{ opacity: 1, backdropFilter: "blur(15px)" }}
+              exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+              transition={{ duration: 0.4 }}
+              // Ici on utilise bg-black/60 (au lieu de 90) pour voir le site en transparence
+              className="fixed inset-0 z-[100] bg-puerto-bg/60 flex flex-col items-center justify-center"
+          >
+              <button 
+                  onClick={() => setIsMenuOpen(false)} 
+                  className="absolute top-8 right-8 md:top-12 md:right-12 group flex items-center gap-3 text-white/70 hover:text-white transition-colors"
+              >
+                  <span className="uppercase tracking-widest text-xs font-bold">Fermer</span>
+                  <div className="p-2 rounded-full border border-white/20 group-hover:border-white transition-colors bg-white/5 backdrop-blur-sm">
+                      <X size={24} />
+                  </div>
+              </button>
+              
+              <nav className="flex flex-col gap-8 text-center">
+                  {[
+                      {name: "Accueil", href: "/"},
+                      {name: "Le Bar", href: "/bar"},
+                      {name: "Le Restaurant", href: "/restaurant"},
+                      {name: "Soirées & Club", href: "/soirees-latino"},
+                      {name: "Cours de Danse", href: "/cours-danse"},
+                      {name: "Contact", href: "/contact"}
+                  ].map((item, i) => (
+                      <motion.div
+                          key={item.name}
+                          initial={{ y: 20, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{ delay: 0.1 + (i * 0.1) }}
+                      >
+                          <Link 
+                              href={item.href}
+                              onClick={() => setIsMenuOpen(false)}
+                              className="text-4xl md:text-6xl font-serif font-bold text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:via-puerto-yellow hover:to-white transition-all duration-300 drop-shadow-lg"
+                          >
+                              {item.name}
+                          </Link>
+                      </motion.div>
+                  ))}
+              </nav>
 
-            <div className="absolute bottom-12 text-white/40 text-sm tracking-widest uppercase border-t border-white/10 pt-4 px-8">
-                Puerto Habana Toulouse
-            </div>
-        </motion.div>
+              <div className="absolute bottom-12 text-white/40 text-sm tracking-widest uppercase border-t border-white/10 pt-4 px-8">
+                  Puerto Habana Toulouse
+              </div>
+          </motion.div>
+        </Portal>
       )}
       </AnimatePresence>
 

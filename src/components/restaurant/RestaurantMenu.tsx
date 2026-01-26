@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { UtensilsCrossed, ChefHat, Coffee, ScrollText, Flame } from "lucide-react";
+import { UtensilsCrossed, ChefHat, Coffee, ScrollText, Flame, Download } from "lucide-react";
+import { BtnArrow, BtnShine } from "../ui/Buttons";
 
 // --- DONNÉES DU MENU (CONFORMES AU PDF) ---
 const menuData = [
@@ -24,9 +25,9 @@ const menuData = [
     label: "Nos Brochettes",
     icon: Flame,
     items: [
-      { name: "Brochettes de Boeuf", desc: "4 pièces, Frites & Salade", price: "16.00€" },
-      { name: "Brochettes de Poulet", desc: "4 pièces, Frites & Salade", price: "14.00€" },
-      { name: "Brochettes de Magret", desc: "4 pièces, Frites & Salade", price: "18.00€" },
+      { name: "Brochettes de Boeuf", desc: "4 pièces, Frites maison & Salade", price: "16.00€" },
+      { name: "Brochettes de Poulet", desc: "4 pièces, Frites maison & Salade", price: "14.00€" },
+      { name: "Brochettes de Magret", desc: "4 pièces, Frites maison & Salade", price: "18.00€" },
       { name: "Mix de Brochettes", desc: "6 pièces (Boeuf, Poulet, Magret, Gambas)", price: "23.00€" },
     ]
   },
@@ -36,11 +37,11 @@ const menuData = [
     icon: ChefHat,
     items: [
       { name: "Poêlée de Gambas Persillées", desc: "Riz sauté aux légumes", price: "23.00€" },
-      { name: "Magret de Canard (300g)", desc: "Entier, grillé, frites & salade", price: "24.00€" },
+      { name: "Magret de Canard (300g)", desc: "Magret entier du Sud-Ouest, Frites maison & salade", price: "24.00€" },
       { name: "Wok de Légumes", desc: "Au choix : Boeuf sauté ou Poulet", price: "18.00€" },
-      { name: "Tartare de Boeuf", desc: "Pesto et Parmesan, frites maison", price: "18.00€" },
-      { name: "Avocado Chicken Burger", desc: "Frites maison", price: "18.00€" },
-      { name: "Burger de Boeuf", desc: "Oignons confits, Cheddar, frites maison", price: "17.00€" },
+      { name: "Tartare de Boeuf", desc: "Pesto et Parmesan, Frites maison", price: "18.00€" },
+      { name: "Avocado Chicken Burger", desc: "Frites maison ", price: "18.00€" },
+      { name: "Burger de Boeuf", desc: "Oignons confits, Cheddar, Frites maison", price: "17.00€" },
       { name: "Salade César", desc: "Poulet croustillant, oeuf, sauce maison, croutons", price: "17.00€" },
       { name: "Salade de la Mer", desc: "Saumon Gravlax, Gambas persillées", price: "18.00€" },
       { name: "Salade de Canard", desc: "Foie gras, Magret séché, croutons", price: "18.00€" },
@@ -53,10 +54,10 @@ const menuData = [
     items: [
       { name: "Assiette de Desserts", desc: "Salade fruits, Mousse Toblerone, Banoffee, Glace", price: "8.00€" },
       { name: "Assiette Fromage Brebis", desc: "Et confiture", price: "8.00€" },
-      { name: "Salade de Fruits Frais", desc: "Maison", price: "8.00€" },
-      { name: "Banoffee Maison", desc: "Tarte banane caramel", price: "8.00€" },
-      { name: "Mousse au Toblerone", desc: "Maison", price: "7.00€" },
-      { name: "Sorbets / Glaces", desc: "3 boules artisanales", price: "7.00€" },
+      { name: "Salade de Fruits Frais", desc: "Fruis frais", price: "8.00€" },
+      { name: "Banoffee Maison", desc: "Fait Maison", price: "8.00€" },
+      { name: "Mousse au Toblerone", desc: "Fait Maison", price: "7.00€" },
+      { name: "Sorbets / Glaces", desc: "3 boules artisanales : Mangue, Fruit de la passion, Citron vert / Fraise, Chocolat, Vanille )", price: "7.00€" },
     ]
   }
 ];
@@ -65,13 +66,19 @@ export function RestaurantMenu() {
   const [activeTab, setActiveTab] = useState("tapas");
 
   return (
+    
     <section className="py-20 md:px-8 max-w-5xl mx-auto relative z-10 border-t border-white/10 border-b border-white/10" id="menu">
-      
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-4">
           La Carte du <span className="text-puerto-yellow">Restaurant</span>
         </h2>
         <p className="text-gray-400 italic">Cuisine maison & saveurs du monde.</p>
+        <div className="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+          {/* Bouton pour télécharger */}
+          <BtnShine href="/carte-restaurant.pdf" target="_blank" className="bg-gradient-cyan px-6 py-4">
+              Télécharger la Carte (PDF)
+          </BtnShine>
+        </div>
       </div>
 
       {/* --- 1. LES ONGLETS (TABS) --- */}

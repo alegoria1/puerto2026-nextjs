@@ -100,7 +100,7 @@ export const BtnArrow = ({ children, href, onClick, target, className = "" }: Bu
         <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-2" />
       </>
   );
-  return href ? <Link href={href} target="{target}" className={finalClass}>{content}</Link> : <button onClick={onClick} className={finalClass}>{content}</button>;
+  return href ? <Link href={href} target={target} className={finalClass}>{content}</Link> : <button onClick={onClick} className={finalClass}>{content}</button>;
 };
 
 // =============================================================================

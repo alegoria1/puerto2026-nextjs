@@ -62,7 +62,7 @@ export default function Hero() {
               Bienvenido a Toulouse
             </span>
             <h1 className="text-5xl md:text-7xl font-serif leading-tight text-white drop-shadow-lg">
-              L'Âme Cubaine,<br />
+              L'Âme Latino,<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-puerto-yellow to-puerto-yellow-light drop-shadow-none">
                 Au Cœur de Toulouse.
               </span>
@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Boutons*/}
             <div className="flex flex-wrap items-center gap-12 pt-8 ">
                 <BtnShine className="bg-gradient-cyan px-6 py-3 text-white shadow-[0_0_15px_rgba(0,0,0,0.6)]" href="/soirees-latino">Les soirées latino</BtnShine>
-                <BtnArrow className="text-white py-2" href="/restaurant" m-6>Voir la carte</BtnArrow>
+                <BtnArrow className="text-white py-2" href="/restaurant" target="_self" m-6>Voir la carte</BtnArrow>
             </div>
 
             

@@ -34,7 +34,7 @@ const formulas = [
     items: [
       "Dégustation de Tapas (4 pièces)",
       "Assiette de Brochettes (4 pièces : Magret, Gambas, Boeuf, Poulet)",
-      "Accompagnement Frites maison & Salade",
+      "Accompagnement Frites maison maison & Salade",
       "Assiette de Desserts (Salade fruits, Mousse Toblerone, Banoffee...)"
     ]
   },
