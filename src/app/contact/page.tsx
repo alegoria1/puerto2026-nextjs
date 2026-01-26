@@ -45,8 +45,8 @@ export default function ContactPage() {
                         <Phone size={32} />
                     </div>
                     <h3 className="text-white font-bold uppercase tracking-widest mb-2">Informations Générales</h3>
-                    <a href="tel:+33561455461" className="block text-3xl md:text-4xl font-serif font-bold text-white hover:text-puerto-yellow transition-colors">
-                        05 61 45 54 61
+                    <a href="tel:+33561544561" className="block text-3xl md:text-4xl font-serif font-bold text-white hover:text-puerto-yellow transition-colors">
+                        05 61 54 45 61
                     </a>
                     <p className="text-gray-400 text-sm mt-2">Du mardi au samedi, dès 10h</p>
                 </div>

@@ -115,9 +115,9 @@ export default function RestaurantPage() {
                 <b>Réservation fortement conseillée le week-end.</b>
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="tel:+33561455461" className="bg-black text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
+                <a href="tel:+33561544561" className="bg-black text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2">
                     <Clock size={18} />
-                    Infos : 05 61 45 54 61
+                    Infos : 05 61 54 45 61
                 </a>
                 <BtnArrow href="https://bookings.zenchef.com/results?rid=371494&pid=1001" target="_blank" className="bg-white/20 text-black border border-black/10 hover:bg-black hover:text-white px-8 py-4 justify-center">
                     Réserver une table

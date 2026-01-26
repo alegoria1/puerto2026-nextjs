@@ -40,7 +40,7 @@ export function FloatingActions() {
 
           {/* 2. DROITE : BOUTON TÉLÉPHONE (Gold, Légèrement arrondi comme l'autre) */}
           <a
-            href="tel:+33561455461"
+            href="tel:+33561544561"
             className="flex items-center justify-center w-14 h-14 bg-puerto-yellow text-black rounded-xl shadow-[0_0_20px_rgba(234,193,87,0.3)] border-2 border-transparent hover:bg-white hover:scale-105 transition-all duration-300 shrink-0"
             aria-label="Appeler le restaurant"
           >

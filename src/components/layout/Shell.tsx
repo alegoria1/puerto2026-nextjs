@@ -118,7 +118,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         
         <div className="flex items-center gap-3 text-sm tracking-[0.07em] text-gray-200 hover:text-white transition-colors cursor-pointer drop-shadow-sm">
           <Phone size={16} className="text-puerto-yellow" />
-          <span>05 61 45 54 61</span>
+          <span>05 61 54 45 61</span>
         </div>
         
         <div className="flex gap-6">

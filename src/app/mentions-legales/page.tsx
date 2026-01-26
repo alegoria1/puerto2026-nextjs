@@ -40,7 +40,7 @@ export default function MentionsLegalesPage() {
                 <li><strong className="text-white">RCS :</strong> Toulouse</li>
                 <li><strong className="text-white">Activité (NAF) :</strong> Débits de boissons (56.30Z)</li>
                 <li className="pt-2 mt-2 border-t border-white/10">
-                    <strong className="text-white">Contact :</strong> <a href="mailto:puerto@puerto-habana.com" className="hover:text-puerto-yellow transition-colors">puerto@puerto-habana.com</a> | 05 61 45 54 61
+                    <strong className="text-white">Contact :</strong> <a href="mailto:puerto@puerto-habana.com" className="hover:text-puerto-yellow transition-colors">puerto@puerto-habana.com</a> | 05 61 54 45 61
                 </li>
             </ul>
         </div>

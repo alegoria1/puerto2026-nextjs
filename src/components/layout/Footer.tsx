@@ -60,9 +60,9 @@ export default function Footer() {
                 </div>
               </li>
               <li>
-                <a href="tel:+33561455461" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
+                <a href="tel:+33561544561" className="flex items-center gap-3 text-gray-400 hover:text-puerto-yellow transition-colors group">
                   <Phone className="min-w-[18px] text-puerto-yellow group-hover:scale-110 transition-transform" size={18} />
-                  <span className="text-sm">05 61 45 54 61</span>
+                  <span className="text-sm">05 61 54 45 61</span>
                 </a>
               </li>
               <li>
